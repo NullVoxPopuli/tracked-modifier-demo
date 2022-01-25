@@ -1,1 +1,11 @@
-{{yield}}
+<div
+  {{this.theModifier this.matchTo this.match
+    on="change"
+  }}
+>
+  Content
+</div>
+
+match: {{this.match}}
+
+<button type="button" {{on 'click' this.changeMatch}}>Cause change to tracked data</button>
